@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Results</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class=" container p-5 mx-auto my-5 bg-dark text-white w-50 rounded border border-3 border-info">
+            <p class="display-5">Submitted Info</p>
+            <div class="d-flex flex-column align-items-center">
+                <table>
+                    <tr>
+                        <td class="p-2 text-info align-top">Name:</td>
+                        <td class="p-2 align-top">{{submission.name}}</td>
+                    </tr>
+                    <tr>
+                        <td class="p-2 text-info align-top">Dojo Locaion:</td>
+                        <td class="p-2 align-top">{{submission.location}}</td>
+                    </tr>
+                    <tr>
+                        <td class="p-2 text-info align-top">Favorite Langage:</td>
+                        <td class="p-2 align-top">{{submission.language}}</td>
+                    </tr>
+                    <tr>
+                        <td class="p-2 text-info align-top">Comment:</td>
+                        <td class="p-2 align-top">{{submission.comment}}</td>
+                    </tr>
+                    <tr>
+                        <td class="p-2 text-info align-top">Rating:</td>
+                        <td class="p-2 align-top">{{submission.score}}</td>
+                    </tr>
+                    <!-- <tr>
+                        <td class="p-2 text-info align-top">Reasons to choose Coding Dojo:</td>
+                        <td class="p-2 align-top">
+                            <table>
+                                <tr>
+                                    <td>
+                                        {{session['reason1']}}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        {{session['reason2']}}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        {{session['reason3']}}
+                                    </td>
+                                </tr>
+                        </table>
+                        </td>
+                    </tr> -->
+                </table>
+                
+                    <a href="/" class="btn btn-warning mt-4 rounded w-100 text-center" name="goBack">Go Back</a>
+                
+            </div> 
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
